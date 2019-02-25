@@ -19,20 +19,20 @@ int espacios = 0;//declaracion de una variable dandole como valor 0
 int numeros = 0;//declaracion de una variable dandole como valor 0
 int otros = 0;//declaracion de una variable dandole como valor 0
 
-for (int i=0; i<frase.length();i++){//uso de un ciclo for 
-if(Character.isLetter(A[i])){
+for (int i=0; i<frase.length();i++){//uso de un ciclo for para que "cuente" cada caracter 
+if(Character.isLetter(A[i])){//uso de un condicional if para que si se cumple la condicion de que el caracter es letra se le sume 1 a la variable letra
 letras ++;}
-else if(Character.isDigit(A[i])){
+else if(Character.isDigit(A[i])){//uso de un condicional if para que si se cumple la condicion de que el caracter es un numer se le sume 1 a la variable numero
 numeros ++;}
-else if(Character.isSpaceChar(A[i])){
+else if(Character.isSpaceChar(A[i])){//uso de un condicional if para que si se cumple la condicion de que el caracter es un espacio se le sume 1 a la variable espacio
 espacios ++;}
-else{
+else{//uso de un else para que si no se cumple la ninguna de las condiciones anteriores se le sume 1 a la variable otro
 otros ++;}
 
 }
-System.out.println("El numero de letras es: "+ letras);
-System.out.println("El numero de espacios es: "+ espacios);
-System.out.println("El numero de numeros es: "+ numeros);
-System.out.println("El numero de otros caracteres es: "+ otros);
+System.out.println("El numero de letras es: "+ letras);//print que imprime la cantidad de letras en la frase
+System.out.println("El numero de espacios es: "+ espacios);//print que imprime la cantidad de espacios en la frase
+System.out.println("El numero de numeros es: "+ numeros);//print que imprime la cantidad de numeros en la frase
+System.out.println("El numero de otros caracteres es: "+ otros);//print que imprime la cantidad de otros caracteres en la frase
 }
 }
